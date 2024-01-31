@@ -15,7 +15,7 @@ Then, we have to check if the file exists
 if (Test-Path $filePath -PathType Leaf) {
 ```
 
-In this script, the user has the option to choose between SHA256 or MD5 has values
+In this script, the user has the option to choose between SHA256 or MD5 hash values
 ``` powershell
 $hashAlgorithm = Read-Host "Choose hash algorithm (SHA256 or MD5)"
 ```
