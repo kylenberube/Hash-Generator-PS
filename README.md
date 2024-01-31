@@ -20,7 +20,7 @@ In this script, the user has the option to choose between SHA256 or MD5 has valu
 $hashAlgorithm = Read-Host "Choose hash algorithm (SHA256 or MD5)"
 ```
 
-The script then checks if the selected algorothim is valid and then generates the has value for the file
+The script then checks if the selected algorothim is valid and then generates the hash value for the file
 ``` powershell
  if ($hashAlgorithm -eq "SHA256" -or $hashAlgorithm -eq "MD5") {
 $hashResult = Get-FileHash -Path $filePath -Algorithm $hashAlgorithm
